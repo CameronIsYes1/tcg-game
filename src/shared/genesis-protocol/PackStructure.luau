@@ -5,6 +5,6 @@ return {
 			{ baseRarity = "Uncommon", amount = 3 },
 			{ baseRarity = "Rare", amount = 1 },
 		},
-		secretRareChance = 0.01,
+		secretRareChance = 0.001,
 	},
 }
