@@ -89,7 +89,7 @@ function openSinglePackDetailed(packType)
 
 	-- Check for secret rare first
 	local hasSecret = false
-	if math.random() < structure.secretRareChance then
+	if math.random() <= structure.secretRareChance then
 		hasSecret = true
 		table.insert(pack, {
 			slot = "Secret",
@@ -147,8 +147,10 @@ end
 
 -- Simulation
 --printPackOpening("Genesis Protocol")
+--[[
 local pack, hasSecret = openSinglePackDetailed("Genesis Protocol")
 print("Got secret rare:", hasSecret)
 for i, card in pairs(pack) do
 	print(i, card.rarity, card.upgraded)
 end
+]]

@@ -118,7 +118,6 @@ function determineCardRarity(baseRarity)
 end
 
 -- Simulation
---[[
 local packs = 100000
 local results, totalCards = simulatePackOpenings("Genesis Protocol", packs)
 print(`Results from opening {packs} packs!`)
@@ -126,4 +125,3 @@ print("Total cards:", totalCards)
 for rarity, data in pairs(results) do
 	print(rarity .. ": " .. data.count .. " cards (" .. string.format("%.3f", data.percentage) .. "%)")
 end
-]]

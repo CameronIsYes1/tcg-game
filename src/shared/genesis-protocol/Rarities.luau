@@ -29,7 +29,7 @@ return {
 	},
 	["Secret Rare"] = {
 		name = "Secret Rare",
-		pullRate = 0.001,
+		pullRate = 0.01,
 		isSecret = true,
 	},
 }
